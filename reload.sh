@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker exec proxy_nginx_1 nginx -s reload
+docker exec proxy-nginx-1 nginx -s reload

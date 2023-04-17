@@ -11,6 +11,8 @@ services:
       - $PWD/config/conf.d:/etc/nginx/conf.d:ro
       - cert-conf_vol:/etc/letsencrypt
       - cert-www_vol:/var/www/certbot
+      - $PWD/html/error:/var/www/error:ro
+      - $PWD/html/img:/var/www/img:ro
     ports:
       - "443:443"
       - "80:80"
